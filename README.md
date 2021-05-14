@@ -28,7 +28,6 @@ forEach: 배열의 요소를 하나씩 뽑아 반복 <br/>
 map: 콜백 함수에서 리턴하는 것을 기반으로 새로운 배열을 만듬 <br/>
 filter: 콜백 함수에서 true를 리턴 후 새로운 배열을 만든다.
  <br/>
-관련된 코드는 array.js에 있음 <br/>
 
 ```JS
 let Date1 = new Date(); //현재시간
