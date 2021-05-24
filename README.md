@@ -1,11 +1,52 @@
 # 정준호 [201930127]
 
+## [05월 18일]
+
+npm install <모듈이름>을 cmd에 치면 외부 모듈을 설치할 수 있음
+
+> 동기식 : 모든 파일을 실행하기전에는 프로그램이 실행되지 않음
+```js
+const file = fs.readFileSync("EEE.txt");//1
+console.log(file);//2
+console.log(file.toString());//3
+//4 프로그램 종료
+```
+1>>2>>3>>4식으로 작동
+
+> 비동기식 : 병렬처리로 하나의 파일을 읽는 시간으로 모두 처리
+```js
+const file = fs.readFileSync("EEE.txt");//1
+
+fs.readFile("EEE.txt", (error, file) => { //2
+    console.log(file, file.toString());//4
+    //5코드 종료
+});
+//3 코드 종료
+```
+1->2->3->4->5 이런식으로 작동한다
+
+> 모듈 관련
+
+노드에서 모듈을 가져올때
+const foo = require("dd");
+
+> process 객체와 이벤트
+
+노드에서 이벤트 연결
+
+pricess.on('이벤트 이름', () => {});
+
+> 전역 변수
+
+__filename: 현재 실행중인 파일 경로
+__dirname: 현재 실행중인 폴더 경로
+
 ## [05월 10일]
 
 > JSON
 
 문자열은 "" 만들어야함 <br/>
-모든 키는 ""로 감싸야한다. <br/>
+모든 키는 ""로 감싸야함. <br/>
 숫자, 문자열, 불 자료형만 사용 가능 <br/>
 
 >Array 
