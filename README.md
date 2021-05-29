@@ -6,12 +6,11 @@ body-parser 미들 웨어 : 요청 본문을 분석함
 
 morgan 미들웨어 : 서버의 로그를 기록
 
->> response 객체
-
-send(): 데이터본문 제공
->>>send는 가장 마지막
-status(): 상태코드 제공
-set(): 헤더 설정
+response 객체
+> send(): 데이터본문 제공
+>> send는 가장 마지막
+> status(): 상태코드 제공
+> set(): 헤더 설정
 
 >> 페이지 라우팅
 
